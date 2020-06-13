@@ -1,0 +1,45 @@
+.banner-container {
+  width: 100%;
+  background-color: #0984e3;
+  ul {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    color: #fff;
+    svg {
+      width: 46px;
+      height: 46px;
+      color: #59a6e2;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner-container {
+    ul {
+      width: 80%;
+      h3 {
+        font-size: 24px;
+      }
+      h5 {
+        font-size: 14px;
+      }
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

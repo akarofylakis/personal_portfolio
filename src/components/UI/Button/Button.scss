@@ -1,0 +1,30 @@
+.btn {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #bfc0c0;
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+  background-color: #007bff;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: #2bb673;
+  border: 2px solid #2bb673;
+}

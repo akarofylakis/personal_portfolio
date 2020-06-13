@@ -1,0 +1,346 @@
+.projects-container {
+  min-height: 50vh;
+  padding: 50px 0;
+  width: 60%;
+  margin: 0 auto;
+  h3 {
+    font-size: 24px;
+  }
+  .projects-list {
+    margin-top: 60px;
+  }
+
+  li {
+    margin: 30px 0 30px 0;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    &:last-child {
+      border-bottom: 0;
+    }
+    span {
+      font-weight: 500;
+    }
+
+    .image-container {
+      min-width: 350px;
+      height: 380px;
+      background-color: #ddd;
+      margin-right: 50px;
+    }
+    h4 {
+      text-align: right;
+      line-height: 1.5;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    h2 {
+      text-align: right;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .technical {
+      margin-bottom: 15px;
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #000;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0px;
+        bottom: -6px;
+        height: 1px;
+        width: 180px;
+        background-color: #ddd;
+      }
+    }
+    .image-container.mobile {
+      display: none;
+    }
+
+    .project-cta {
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+        margin: 0;
+        margin-top: 30px;
+        color: #0984e3;
+        width: 125px;
+        padding: 8px 17px;
+        font-size: 14px;
+        border: 2px solid #0984e3;
+        background-color: transparent;
+        transition: all 0.2s ease-in-out;
+        &:first-child {
+          margin-right: 20px;
+          width: 105px;
+        }
+        &:hover {
+          background-color: #0984e3;
+          color: #fff;
+        }
+      }
+    }
+
+    .folllowr-cta .btn {
+      color: #199450;
+      border: 2px solid #199450;
+      &:hover {
+        background-color: #199450;
+      }
+    }
+
+    .staysharp-cta .btn {
+      color: #f0922b;
+      border: 2px solid #f0922b;
+      &:hover {
+        background-color: #f0922b;
+      }
+    }
+
+    &:nth-child(2) {
+      .image-container {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+      h2,
+      h4 {
+        text-align: left;
+      }
+      .technical:before {
+        left: 0;
+      }
+    }
+
+    .folllowr,
+    .staysharp,
+    .lifttracker {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("https://res.cloudinary.com/akarofylakis/image/upload/v1591960818/personal/Screenshot_2_ar2pu0.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      position: relative;
+      transition: background-image 0.3s ease-in-out;
+      .project-logo {
+        cursor: pointer;
+        display: block;
+        background-image: url("https://res.cloudinary.com/akarofylakis/image/upload/v1591961095/personal/logo_gc3yyv.png");
+        position: absolute;
+        background-size: cover;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 120px;
+        height: 120px;
+        transition: top 0.3s ease-in-out;
+        &:after {
+          content: "VISIT WEBSITE";
+          color: #199450;
+          font-size: 14px;
+          font-weight: 500;
+          display: block;
+          position: absolute;
+          right: 50%;
+          bottom: -30px;
+          transform: translateX(50%);
+          height: 15px;
+          width: 140px;
+          padding: 8px 10px;
+          line-height: 1;
+          border: 2px solid #199450;
+          opacity: 0;
+          border-radius: 3px;
+          cursor: pointer;
+
+          transition: opacity 0.3s ease-in-out;
+        }
+      }
+      &:hover {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.82)
+          ),
+          url("https://res.cloudinary.com/akarofylakis/image/upload/v1591960818/personal/Screenshot_2_ar2pu0.png");
+        .project-logo {
+          top: 35%;
+          &:after {
+            opacity: 1;
+          }
+          &:hover {
+            &:after {
+              background-color: #199450;
+              color: #000;
+            }
+          }
+        }
+      }
+      &.lifttracker {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("https://res.cloudinary.com/akarofylakis/image/upload/v1591966767/personal/Screenshot_5_yvuoiy.png");
+        .project-logo {
+          background-image: url("https://res.cloudinary.com/akarofylakis/image/upload/v1591966750/personal/logo_rfpolj.png");
+          &:after {
+            color: #00a8ff;
+            border: 2px solid #00a8ff;
+          }
+        }
+        &:hover {
+          background-image: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.82),
+              rgba(0, 0, 0, 0.82)
+            ),
+            url("https://res.cloudinary.com/akarofylakis/image/upload/v1591966767/personal/Screenshot_5_yvuoiy.png");
+          .project-logo {
+            &:hover {
+              &:after {
+                background-color: #00a8ff;
+              }
+            }
+          }
+        }
+      }
+      &.staysharp {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("https://res.cloudinary.com/akarofylakis/image/upload/v1591966064/personal/Screenshot_3_dphsew.png");
+
+        .project-logo {
+          background-image: url("https://res.cloudinary.com/akarofylakis/image/upload/v1591966103/personal/logo_rrz4q4.png");
+          &:after {
+            color: #f0922b;
+            border: 2px solid #f0922b;
+          }
+        }
+        &:hover {
+          background-image: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.82),
+              rgba(0, 0, 0, 0.82)
+            ),
+            url("https://res.cloudinary.com/akarofylakis/image/upload/v1591966064/personal/Screenshot_3_dphsew.png");
+          .project-logo {
+            &:hover {
+              &:after {
+                background-color: #f0922b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .projects-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects-container {
+    padding: 40px 0;
+    width: 90%;
+
+    .projects-list {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .projects-container {
+    h3 {
+      position: relative;
+      margin-bottom: 50px;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -16px;
+        height: 1px;
+        width: 280px;
+        background-color: #ddd;
+      }
+    }
+    li {
+      flex-direction: column;
+      &:nth-child(2) {
+        .image-container {
+          margin-left: 0px;
+        }
+        h2,
+        h4 {
+          text-align: center;
+        }
+        .technical:before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .image-container {
+        display: none;
+      }
+      .image-container.mobile {
+        display: block;
+        order: 3;
+        min-width: 400px;
+        height: 250px;
+        margin-right: 0px;
+        margin-top: 30px;
+      }
+      h4 {
+        order: 2;
+        text-align: center;
+      }
+      .technical-text {
+        order: 4;
+      }
+      h2 {
+        order: 1;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .technical {
+        order: 4;
+        margin-bottom: 30px;
+        position: relative;
+        &:before {
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+
+      .project-cta {
+        order: 5;
+        justify-content: center;
+      }
+    }
+  }
+}
